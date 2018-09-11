@@ -1,13 +1,14 @@
 'use strict'
 
 /*
- * Create a `isPositive` function that takes a number as
- * parameter and return true if the given number is
- * stricly positive, or false otherwise
+ * Create a function `isPositive` that takes a Number
+ * and return if the given number is positive
  *
  */
 
 // Your code:
+const isPositive = num => (num > 0)?true:false 
+
 
 
 //* Begin of tests
@@ -22,3 +23,5 @@ assert.strictEqual(isPositive(-0.7), false)
 assert.strictEqual(isPositive(-787823), false)
 assert.strictEqual(isPositive(0), false)
 // End of tests */
+
+// const isPositive = a => (a > 0)?true:false 

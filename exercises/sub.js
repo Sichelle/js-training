@@ -1,13 +1,15 @@
 'use strict'
 
 /*
- * Create a `sub` function that takes 2 numbers as arguments and substract them
+ * Create a function `sub` that takes 2 arguments and substract them
  *
  * @notions Primitive and Operators, Functions
  */
 
 // Your code :
-
+const sub = (argument1, argument2) => {
+	return (argument1-argument2)
+}
 //* Begin of tests
 const assert = require('assert')
 const rand = Math.random()

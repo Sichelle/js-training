@@ -1,12 +1,30 @@
 'use strict'
 
 /*
- * Create a `repeat` function that takes a string and a number as parameters
+ * Create a function `repeat` that takes a String and a Number
  * and return the repeated string by the given number
  * Like the method https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
  * Of course you may not use the method directly
  *
  */
+
+// const repeat = (str, num) => {
+// 	return ('str' * num);
+// }
+
+
+const repeat = (str, num) => {
+	let result = ''  //variable vacia donde guardaremos el resultado de cada vuelta del ciclo/boucle 
+	for (let i = 0 ; i < num; i++) {
+
+		result = result + str
+	}
+	return result
+}
+
+
+
+//console.log(repeat('haha', 1))
 
 //* Begin of tests
 const assert = require('assert')

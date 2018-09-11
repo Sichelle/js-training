@@ -1,7 +1,7 @@
 'use strict'
 
 /*
- * Create the `sign` function that takes one number argument
+ * Create the function `sign` that takes one number argument
  * and return 1 if the number is positive, -1 if the number is negative
  * and 0 if the number is exactly 0
  * You must not just use `Math.sign`, make your own.
@@ -11,6 +11,16 @@
  */
 
 // Your code :
+
+const sign = (a) => {
+	if  (a > 0) {
+		return 1;
+	} else if (a < 0) {
+		return -1;
+	} else {
+		return 0;
+	}
+}
 
 //* Begin of tests
 const assert = require('assert')
@@ -24,3 +34,12 @@ assert.strictEqual(sign(10), 1)
 assert.strictEqual(sign(0), 0)
 assert.strictEqual(sign(132), 1)
 // End of tests */
+
+// arg>0?1:-1?0===0
+
+// if (condition1)
+//    instruction1
+// else if (condition2)
+//    instruction2
+// else if (condition3)
+//    instruction3

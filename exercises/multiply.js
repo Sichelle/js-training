@@ -8,7 +8,26 @@
  * @notions Primitive and Operators, Functions, While
  */
 
-// Your code :
+// Your code :7 
+// a = 10 y b = -1
+// si-if ? alors : else
+const abs = (argument) => argument>0?argument:-argument;
+
+const multiply = (a , b) => {
+	const valueToAdd = b > 0 ? a : -a;
+	let result = 0;
+	let numberOfOperation = abs(b); 
+	
+	while (numberOfOperation > 0) { 
+		result = result + valueToAdd ; 
+		numberOfOperation = numberOfOperation - 1; 
+	}
+
+	return result;
+}
+
+
+
 
 //* Begin of tests
 const assert = require('assert')
