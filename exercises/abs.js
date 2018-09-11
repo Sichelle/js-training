@@ -10,7 +10,7 @@
  */
 
 // Your code :
-const abs = (argument) => argument>0?argument:-argument;
+const abs = (argument) => argument>=0?argument:-argument;
 
 //* Begin of tests
 const assert = require('assert')
